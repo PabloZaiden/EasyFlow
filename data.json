@@ -1,0 +1,50 @@
+{
+	"Data": {"Prop1": "Val1", "Prop2": 2},
+	"LastModified": "2015-08-28T17:41:59.012777-03:00",
+	"Id": "B71DE1DE-DACB-44EC-8546-3C5D1387E6C1",
+	"CurrentState": "State1",
+	"States": [
+		{
+			"Name": "State1",
+			"Transitions": [
+				{
+					"Name": "E1 a E2",
+					"StateName": "State2",
+					"Permission": null,
+					"Rules": [
+						{
+							"Name": "ApprovedBy",
+							"Parameters": ["U1", "U2"]
+						}
+					],
+					"Actions": [
+						{
+							"Name": "DummyAction",
+							"Parameters": ["P1", "P2", "P3"]
+						},
+						{
+							"Name": "SaveCommentAction"
+						}
+					]
+				}
+			]	
+		},
+		{
+			"Name": "State2",
+			"Transitions": [
+				{
+					"Name": "E2 a E3",
+					"StateName": "State3",
+					"Permission": null,
+					"Rule": null,
+					"Actions": [{"Name": "SaveCommentAction"}]
+				},
+
+			]	
+		},
+		{
+			"Name": "State3",
+			"Transitions": []
+		}
+	]
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D83A24B5-0A8C-44DB-AB94-F8274E52C4FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EasyFlow.Core</RootNamespace>
+    <AssemblyName>EasyFlow.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rules\IRule.cs" />
+    <Compile Include="Rules\ApprovedBy.cs" />
+    <Compile Include="Managers\IAuthManager.cs" />
+    <Compile Include="Managers\DummyAuthManager.cs" />
+    <Compile Include="Rules\Validation\UserValidationError.cs" />
+    <Compile Include="ValidationError.cs" />
+    <Compile Include="Rules\RuleBase.cs" />
+    <Compile Include="Rules\Validation\PermissionValidation.cs" />
+    <Compile Include="Rules\Validation\ValidationException.cs" />
+    <Compile Include="Managers\CommandManager.cs" />
+    <Compile Include="Actions\IAction.cs" />
+    <Compile Include="Actions\DummyAction.cs" />
+    <Compile Include="Model\Command.cs" />
+    <Compile Include="Model\State.cs" />
+    <Compile Include="Model\Transition.cs" />
+    <Compile Include="Model\Workflow.cs" />
+    <Compile Include="Diagnostics\LogLevel.cs" />
+    <Compile Include="Diagnostics\Logger.cs" />
+    <Compile Include="Actions\SaveCommentAction.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Rules\" />
+    <Folder Include="Managers\" />
+    <Folder Include="Rules\Validation\" />
+    <Folder Include="Actions\" />
+    <Folder Include="Model\" />
+    <Folder Include="Diagnostics\" />
+  </ItemGroup>
+</Project>
