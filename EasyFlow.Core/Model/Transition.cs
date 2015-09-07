@@ -9,6 +9,7 @@ namespace EasyFlow.Core
 		{
 			Rules = new List<Command> ();
 			Actions = new List<Command> ();
+			Conditions = new List<Command> ();
 		}
 
 		public String Name {
@@ -32,6 +33,11 @@ namespace EasyFlow.Core
 		}
 
 		public List<Command> Actions {
+			get;
+			set;
+		}
+
+		public List<Command> Conditions {
 			get;
 			set;
 		}

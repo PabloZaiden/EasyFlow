@@ -56,6 +56,9 @@
     <Compile Include="Diagnostics\LogLevel.cs" />
     <Compile Include="Diagnostics\Logger.cs" />
     <Compile Include="Actions\SaveCommentAction.cs" />
+    <Compile Include="Conditions\ICondition.cs" />
+    <Compile Include="Conditions\Equals.cs" />
+    <Compile Include="Conditions\ConditionBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -68,5 +71,6 @@
     <Folder Include="Actions\" />
     <Folder Include="Model\" />
     <Folder Include="Diagnostics\" />
+    <Folder Include="Conditions\" />
   </ItemGroup>
 </Project>

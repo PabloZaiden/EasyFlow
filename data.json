@@ -11,6 +11,16 @@
 					"Name": "E1 a E2",
 					"StateName": "State2",
 					"Permission": null,
+					"Conditions": [
+						{
+							"Name": "Equals",
+							"Parameters": ["Prop1", "Val1"]
+						},
+						{
+							"Name": "GreaterThan",
+							"Parameters": ["Prop2", 1]
+						}
+					],
 					"Rules": [
 						{
 							"Name": "ApprovedBy",
