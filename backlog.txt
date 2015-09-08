@@ -1,0 +1,6 @@
+Backlog Workflow
+	- Bifurcadores de flujo
+		- Rango de numeros
+		- Booleanos
+		- Equals
+		- Contains
