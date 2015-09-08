@@ -1,8 +1,0 @@
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/bin/Debug/EasyFlow.ConsoleApp.exe.mdb
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/bin/Debug/EasyFlow.ConsoleApp.exe
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/obj/x86/Debug/EasyFlow.ConsoleApp.exe
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/obj/x86/Debug/EasyFlow.ConsoleApp.exe.mdb
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/bin/Debug/EasyFlow.Core.dll
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/bin/Debug/EasyFlow.Core.dll.mdb
-/Users/PabloZaiden/Desktop/EasyFlow/EasyFlow.ConsoleApp/bin/Debug/Newtonsoft.Json.dll

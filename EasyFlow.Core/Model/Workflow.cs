@@ -162,7 +162,6 @@ namespace EasyFlow.Core
 		}
 
 		public List<Transition> GetTransitionsForCurrentState() {
-			int a = 1;
 			return States.Single (s => s.Name == CurrentState).Transitions;
 		}
 
