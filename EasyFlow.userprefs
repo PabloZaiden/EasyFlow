@@ -1,6 +1,11 @@
 ﻿<Properties StartupItem="EasyFlow.ConsoleApp/EasyFlow.ConsoleApp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EasyFlow.Core/Model/Workflow.cs">
+    <Files>
+      <File FileName="EasyFlow.ConsoleApp/Program.cs" Line="58" Column="44" />
+      <File FileName="EasyFlow.Core/Model/Workflow.cs" Line="176" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
